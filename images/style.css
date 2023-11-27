@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+    background-color: white;
+  }
+  
+  h1,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 5px;
+    
+  }
+  h2{
+    margin: 20px 15px 20px 30px;
+    text-align: right;
+  }
+  
+  p {
+    margin: 0;
+  }
+
+  /*---------------------------*/
+.header {
+  padding: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color:black;
+  color: #ffffff;
+  
+  
+}
+
+.header h1 {
+  display: inline-block;
+  font-size: 30px;
+  color: black;
+  background-color: #2a607c;
+  
+ 
+}
+
+
+.header section {
+  padding-top: 15px;
+  margin-right: 20px;
+  float:right ;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  
+  
+}
+
+/* style new <nav> attribute */
+.header section nav ul,li {
+display: inline-block;
+list-style-type: none;
+margin-left: 25px;
+text-decoration: underline;
+
+
+}
+
+header  section nav ul, li a {
+  color: lightblue;
+  /*text-decoration: underline;*/
+  
+}
+
+p {
+  font-size: 16px;
+  margin: 20px;
+  text-align: left;
+}
+
+
+/*******************************/
+/* COLUMN STYLES */
+.hero-banner {
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+    height: 150px;
+    padding: 5px;
+    /*margin: 5px;*/
+  }
+  .top {
+    height: 140%;
+    display: flex; 
+    /*align-items: center; */
+    justify-content: flex-end;
+    background-image: url("../images/02-hero-bg.jpg");
+  }
+  .block {
+    width: 33.3%;
+    max-width: 220px;
+    height: 40px;
+    border: 5px;
+    background-color: #2a607c;
+    margin: 15px;
+    float: left;
+    margin-left: 430px;
+    margin-top: 80px;
+  
+  }
+  .block h2{
+    margin: 5px;
+    
+  }
+
+  /*----------------------MAIN--------------------------------*/
+  .page-section{
+    width:100%;
+    display: inline-flex;
+    margin: 1.5%;
+  }
+  .page-section h2{
+    margin: 20px 15px 20px 30px;
+    text-align: right;
+  }
+  .me p { 
+    font-size: 100%; 
+    padding-right: 15em; 
+    line-height: 24px;
+    margin: 20px;
+   }
+   img{
+    height: 200px;
+    width: 50px;
+    margin: auto;
+   }
+  
+   span{
+    border: 1px solid #2a607c;
+    margin-top: 5px;
+   }
+
+   #about h2{
+    margin: 25%;
+   }
+   #contact h2 {
+    margin: 20%;
+
+   }
+   .me{
+    grid: ab;
+   }
+   #contact {
+    grid: ij;
+   }
+  /*----------------------grid main--------------------------------*/
+  .page-wrapper{
+    height: 1000px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: 
+    "ab  ab"
+    "ef  ef "
+    "ij ij";
+
+  }
+
