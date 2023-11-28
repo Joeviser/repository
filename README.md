@@ -1,10 +1,5 @@
 # REPOSITORY
-My Repository
-
-
-
-# Joeviser Repository Website
-This is Joeviser repository 
+Joeviser Repository
 
 
 ## Description
@@ -16,7 +11,8 @@ Website:
 https://joeviser.github.io/repository/
 
 Screenshot:
-
+repository.jpg
+repository2.jpg
 
 ## Usage
 
