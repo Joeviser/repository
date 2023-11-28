@@ -1,4 +1,8 @@
-
+:root{
+  --repeatedcolor: lightblue;
+  --anothercolor:#2a607c;
+  --fontfamily: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 * {
   box-sizing: border-box;
   padding: 0;
@@ -8,7 +12,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: var(--fontfamily);
   line-height: 1.5;
   background-color: white;
 }
@@ -26,7 +30,7 @@ h2{
   justify-content: center;
 }
 h3{
-  background-color: lightblue;
+  color:black;
 }
 p {
   margin: 0;
@@ -36,18 +40,16 @@ p {
 
 .header {
   padding: 20px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color:lightblue;
-  color: #ffffff;
-  
-  
+  font-family: var(--fontfamily);
+  background-color: var(--repeatedcolor);
+  height: 180px;
 }
 
 .header h1 {
   display: inline-block;
   font-size: 30px;
-  color: black;
-  background-color: #2a607c;
+  color: white;
+  background-color: var(--anothercolor);
   margin: 10px 10px 10px 10px;
   padding: 10px;
 }
@@ -57,7 +59,7 @@ p {
   padding-top: 15px;
   margin-right: 20px;
   float:right ;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: var(--fontfamily);
   font-size: 20px;
   
   
@@ -98,7 +100,7 @@ p {
 .hero-banner {
   display: flex;
   flex-direction: column;
-  background-color: lightblue;
+  background-color: var(--repeatedcolor);
   height: 150px;
   padding: 5px;
   /*margin: 5px;*/
@@ -114,7 +116,7 @@ p {
   max-width: 220px;
   height: 40px;
   border: 5px;
-  background-color: #2a607c;
+  background-color: var(--anothercolor);
   margin: 15px;
   float: left;
   margin-left: 430px;
@@ -123,6 +125,7 @@ p {
 }
 .block h2{
   margin: 5px;
+  color: white;
   
 }
 
@@ -151,7 +154,7 @@ p {
  }
 
  span{
-  border: 1px solid #2a607c;
+  border: 1px solid var(--anothercolor);
   margin-top: 5px;
  }
  /*--------GRID------------*/
@@ -200,29 +203,24 @@ p {
   background-size: cover;
   align-items: center;
   display: flex;
-  /*position: absolute;*/
   align-content: end;
   margin: 5px;
   cursor: pointer;
 }
 #headline{
-  /*position: relative;*/
-  background-color: lightblue;
+  background-color: var(--repeatedcolor);
   top: 100px;
   padding: 10px;
   max-height: 350px;
   z-index: 100;
 }
-#calculator h3{
-  background-color: lightblue;
-}
+
 
 .contact h2 {
   display: inline-block;
   font-size: 30px;
   color: black;
   width: 100px;
-  /*background-color: #2a607c;*/
   
  
 }
@@ -239,7 +237,7 @@ p {
     padding-top: 15px;
     margin-right: 20px;
     float:right ;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--fontfamily);
     font-size: 25px;
     text-align: center;
     
@@ -248,4 +246,23 @@ p {
     color: black;
     
     
+  }
+
+  @media only screen and (max-width: 768px) {
+    
+    body,
+    main,
+    nav {
+      flex-direction: column;
+    }
+  }
+  @media only screen and (max-width: 992px) {
+    section.hero-banner {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    section.headline {
+      display: none;
+    }
   }
