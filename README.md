@@ -10,9 +10,9 @@ A portfolio of work showcase skills and talents to employers. This portfolio hig
 Website:
 https://joeviser.github.io/repository/
 
-Screenshot:
-repository.jpg
-repository2.jpg
+![Alt text](images/repositoryscreenshot.jpg)
+
+
 
 ## Usage
 
